@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Consultar"
+    tools:showIn="@layout/activity_consultar">
+
+    <TextView
+        android:id="@+id/lbl_fecha_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/Title_fecha"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_fecha_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/Title_fecha"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/lbl_fecha_consulta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/sw_modo_consulta"
+        android:layout_width="173dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="4dp"
+        android:buttonTint="@color/transparente"
+        android:foregroundTint="@color/blanco"
+        android:showText="true"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="@string/ver"
+        android:textAlignment="center"
+        android:textOff="@string/swSurtido"
+        android:textOn="@string/swentregado"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerAlmacenconsulta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerAlmacenconsulta"
+        android:layout_width="764dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/side_nav_bar"
+        android:dropDownWidth="match_parent"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/blanco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_modo_consulta" />
+
+    <ListView
+        android:id="@+id/lv_surtidoconsulta"
+        android:layout_width="760dp"
+        android:layout_height="405dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAlmacenconsulta"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

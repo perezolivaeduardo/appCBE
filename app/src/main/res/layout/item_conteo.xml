@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvConteoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textSize="@dimen/itemconteo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1234" />
+
+    <TextView
+        android:id="@+id/tvconteoDescripcion"
+        android:layout_width="501dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        android:textSize="@dimen/itemconteo"
+        app:layout_constraintEnd_toStartOf="@+id/tvLibros"
+        app:layout_constraintStart_toEndOf="@+id/tvConteoId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:text="#"
+        android:textSize="@dimen/itemconteo"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLibros"
+        app:layout_constraintStart_toEndOf="@+id/tvLibros"
+        app:layout_constraintTop_toTopOf="@+id/tvLibros"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <TextView
+        android:id="@+id/tvLibros"
+        android:layout_width="88dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        android:textSize="@dimen/itemconteo"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/tvconteoDescripcion"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/tvconteoDescripcion"
+        app:layout_constraintTop_toTopOf="@+id/tvconteoDescripcion"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/tvconteoDiferencia"
+        android:layout_width="61dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textSize="@dimen/itemconteo"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.466" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sw_modo_entrega">Entrega</string>
+    <string name="sw_modo_surtido">Surtir</string>
+    <string name="Turno">Turno</string>
+    <string name="Area">Area</string>
+    <string name="swConMovimiento">Con Movimiento</string>
+    <string name="Faltantes">Faltantes</string>
+    <string name="TurnoRecibe">Turno que Recibe :</string>
+</resources>

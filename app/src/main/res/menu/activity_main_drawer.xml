@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_resumen"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Resumen" />
+
+        <item
+            android:id="@+id/nav_consulta"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Consultar" />
+
+        <item
+            android:id="@+id/nav_pendietes"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="Pendintes" />
+
+        <item
+            android:id="@+id/nav_capturaInventario"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Captura Inventario" />
+
+        <item
+            android:id="@+id/nav_Inventario_Almacen"
+            android:title="Muestreo Almacen" />
+
+        <item
+            android:id="@+id/nav_preparar"
+            android:title="Conteo Diario" />
+
+    </group>
+
+    <item android:title="Utilerias">
+        <menu>
+
+            <item
+                android:id="@+id/nav_conexion"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Prueba Conexion" />
+
+            <item
+                android:id="@+id/nav_update"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Actualizar App" />
+
+            <item
+                android:id="@+id/nav_cerrar"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Cerrar" />
+        </menu>
+    </item>
+
+</menu>
